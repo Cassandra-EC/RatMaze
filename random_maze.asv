@@ -2,15 +2,14 @@
 
 %%% SUMMARY: test script to try ap development in preparation for ratmaze
 function maze = random_maze()
-difficulty = select_difficulty();
 
-if difficulty==easy
+if easy
     maze_size = [10, 10];
 
-elseif difficulty==intermediate     % 'light_work'
+elseif intermediate     % 'light_work'
     maze_size = [20,20];
 
-elseif difficulty==hard             % 'break a sweat'
+elseif hard     % 'break a sweat'
     maze_size = [40,40];
 end
 
